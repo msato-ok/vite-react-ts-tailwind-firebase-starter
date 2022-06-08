@@ -1,0 +1,12 @@
+version: '3.2'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    image: vite-react-ts-tailwind-vscode-container
+    volumes:
+      - .:/app:z
+      - /app/node_modules
+    working_dir: /app

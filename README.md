@@ -1,6 +1,6 @@
-# ⚡ vite-react-ts-tailwind-starter
+# vite-react-ts-tailwind-vscode-container
 
-Starter using Vite + React + TypeScript + Tailwind with Firebase.
+Starter for vscode using Vite, React, TypeScript and Tailwind with Firebase.
 
 ## Motivation
 
@@ -22,8 +22,9 @@ This starter uses following libraries:
 
 ```shell
 mv .env.local.example .env.local
-yarn
-yarn dev
+npm install
+npx husky install
+npm run dev
 ```
 
 ### Firebase
@@ -32,7 +33,7 @@ If you **DO NOT** use Firebase, you should do:
 
 - Delete the Firebase-related code: you check Main.tsx, SignInButton.tsx, SignOutButton.tsx.
 - And then delete `src/lib/firebase.ts`
-- Run `yarn remove firebase`
+- Run `npm remove firebase`
 - Remove `VITE_FIREBASE_*` env values from `.env.local`
 
 If you want to use Firebase, you should do:
